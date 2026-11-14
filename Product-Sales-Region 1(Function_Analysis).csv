@@ -1,0 +1,45 @@
+No.,Function,Purpose,Formula/result
+1,SUM,Calculate total sales,4379992.429
+2,AVERAGE,Calculate average sales per transaction,2919.994952
+3,MIN,Find the minimum transaction value,6.97
+4,MAX,Find the maximum transaction value,11077
+5,COUNT,Count numeric transaction values,1500
+6,COUNTA,Count non-empty Order IDs,1500
+7,ROUND,Round average transaction value to 2 decimals,2919.99
+8,ROUNDUP,Round average transaction value upward,2920
+9,ROUNDDOWN,Round average transaction value downward,2919.99
+10,IF,"Classify a transaction based on sales value  This checks the first transaction:
+
+If TotalPrice is ?5,000 or more ? High Value
+Otherwise ? Normal Value",Normal Value
+11,IFS,"Classify transaction into three sales categories We'll classify the first transaction based on TotalPrice:
+
+Below ?2,000 ? Low
+?2,000–?5,000 ? Medium
+Above ?5,000 ? High",Medium
+12,AND,"Check whether quantity and unit price meet conditions We'll check whether the first transaction:
+
+has Quantity ? 10 AND
+has UnitPrice ? ?500",FALSE
+13,OR,"Check whether at least one customer condition is met We'll check whether the first transaction is either:
+
+a Wholesale customer, OR
+has a discount of 15%",TRUE
+14,IFERROR,"Handle calculation errors with a custom message Instead of displaying:
+#DIV/0!
+Excel should display:
+Calculation Error",Calculation Error
+15,SUMIF,Calculate total sales for the East region,883633.718
+16,SUMIFS,Calculate East region sales for Retail customers,417764.449
+17,COUNTIF,Count transactions from the East region,311
+18,COUNTIFS,"Count East region Retail transactions This counts rows where:
+Region = East
+CustomerType = Retail",147
+19,AVERAGEIF,Calculate average sales for the East region,2841.265974
+20,AVERAGEIFS,Calculate average East region sales for Retail customers,2841.935027
+21,XLOOKUP,Find the Region Manager for the East region,Eric
+22,VLOOKUP,Find the Region Manager for the East region,Eric
+23,INDEX,Retrieve the TotalPrice of the 10th transaction,1454.76
+24,MATCH,Find the position of the first East region record,1
+25,SUMPRODUCT,Calculate total discounted sales using multiple columns,4379992.429
+26,SUBTOTAL,Calculate sales from visible/filtered transactions,4379992.429
